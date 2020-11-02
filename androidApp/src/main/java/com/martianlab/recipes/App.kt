@@ -4,7 +4,6 @@ import android.app.Application
 import android.content.Context
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
-import com.martianlab.data.sources.db_new.appContext
 import com.martianlab.recipes.di.*
 import com.surrus.common.di.initKoin
 import org.koin.android.ext.koin.androidContext
@@ -13,10 +12,12 @@ import java.lang.ref.WeakReference
 
 class App : Application() {
 
+    //lateinit var appContext: Context
+
     override fun onCreate() {
         super.onCreate()
 
-        appContext = this
+        //appContext = this
 
         initKoin {
             androidLogger()
