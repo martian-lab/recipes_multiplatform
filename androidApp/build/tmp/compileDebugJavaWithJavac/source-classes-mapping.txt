@@ -1,0 +1,52 @@
+com/martianlab/recipes/presentation/views/base/IView.java
+ com.martianlab.recipes.presentation.views.base.IView
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/martianlab/recipes/DataBindingInfo.java
+ com.martianlab.recipes.DataBindingInfo
+com/martianlab/recipes/databinding/RecipeIngredientItemBinding.java
+ com.martianlab.recipes.databinding.RecipeIngredientItemBinding
+com/martianlab/recipes/databinding/FragmentSplashBinding.java
+ com.martianlab.recipes.databinding.FragmentSplashBinding
+com/martianlab/recipes/generated/callback/OnClickListener.java
+ com.martianlab.recipes.generated.callback.OnClickListener
+ com.martianlab.recipes.generated.callback.OnClickListener$Listener
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/martianlab/recipes/databinding/RecipeStageItemBindingImpl.java
+ com.martianlab.recipes.databinding.RecipeStageItemBindingImpl
+com/martianlab/recipes/databinding/RecipeIngredientItemBindingImpl.java
+ com.martianlab.recipes.databinding.RecipeIngredientItemBindingImpl
+com/martianlab/recipes/databinding/RecipeCategoryItemBindingImpl.java
+ com.martianlab.recipes.databinding.RecipeCategoryItemBindingImpl
+com/martianlab/recipes/BuildConfig.java
+ com.martianlab.recipes.BuildConfig
+com/martianlab/recipes/databinding/FragmentRecipesBinding.java
+ com.martianlab.recipes.databinding.FragmentRecipesBinding
+com/martianlab/recipes/DataBinderMapperImpl.java
+ com.martianlab.recipes.DataBinderMapperImpl
+ com.martianlab.recipes.DataBinderMapperImpl$InnerBrLookup
+ com.martianlab.recipes.DataBinderMapperImpl$InnerLayoutIdLookup
+com/martianlab/recipes/databinding/FragmentSplashBindingImpl.java
+ com.martianlab.recipes.databinding.FragmentSplashBindingImpl
+com/martianlab/recipes/databinding/RecipeStageItemBinding.java
+ com.martianlab.recipes.databinding.RecipeStageItemBinding
+com/martianlab/recipes/databinding/FragmentRecipeDetailsBindingImpl.java
+ com.martianlab.recipes.databinding.FragmentRecipeDetailsBindingImpl
+com/martianlab/recipes/databinding/RecipeItemBinding.java
+ com.martianlab.recipes.databinding.RecipeItemBinding
+com/martianlab/recipes/databinding/RecipeItemBindingImpl.java
+ com.martianlab.recipes.databinding.RecipeItemBindingImpl
+com/martianlab/recipes/databinding/FragmentRecipesBindingImpl.java
+ com.martianlab.recipes.databinding.FragmentRecipesBindingImpl
+com/martianlab/recipes/BR.java
+ com.martianlab.recipes.BR
+com/martianlab/recipes/databinding/RecipeCategoryItemBinding.java
+ com.martianlab.recipes.databinding.RecipeCategoryItemBinding
+com/martianlab/recipes/databinding/FragmentRecipeDetailsBinding.java
+ com.martianlab.recipes.databinding.FragmentRecipeDetailsBinding
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/martianlab/recipes/generated/callback/Function0.java
+ com.martianlab.recipes.generated.callback.Function0
+ com.martianlab.recipes.generated.callback.Function0$Listener

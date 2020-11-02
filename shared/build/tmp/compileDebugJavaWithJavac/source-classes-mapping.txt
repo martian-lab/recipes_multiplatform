@@ -1,0 +1,2 @@
+com/martianlab/mykmmapplication/android/BuildConfig.java
+ com.martianlab.mykmmapplication.android.BuildConfig

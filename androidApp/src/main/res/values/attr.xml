@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseRecyclerView">
+        <attr name="orientation" format="integer"/>
+        <attr name="behaviour" format="enum">
+            <enum name="scroll" value="0" />
+            <enum name="centering_scroll" value="1" />
+            <enum name="swipe" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

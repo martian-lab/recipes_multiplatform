@@ -1,0 +1,56 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.martianlab.recipes.androidApp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:5:5-67
+11-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:6:5-78
+12-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:8:5-24:19
+15        android:name="com.martianlab.recipes.App"
+15-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:9:9-28
+16        android:allowBackup="true"
+16-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.3.1] /home/as/.gradle/caches/transforms-2/files-2.1/7d396e07677056fe557c2f2d78d7b1fc/core-1.3.1/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:12:9-41
+21        android:networkSecurityConfig="@xml/network_security_config"
+21-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:13:9-69
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:14:9-54
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:15:9-40
+25        <activity android:name="com.martianlab.recipes.presentation.MainActivity" >
+25-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:16:9-22:20
+25-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:16:19-60
+26            <intent-filter>
+26-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:18:17-68
+27-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:20:17-76
+29-->/home/as/AndroidStudioProjects/MyKMMApp/androidApp/src/main/AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.martianlab.recipes.presentation.views.recipeCategory.RecipeCategoryItemViewModel"/>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="0dp">
+
+
+        <TextView
+                android:id="@+id/category_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@{viewModel.title}"
+                android:gravity="center"
+                android:layout_gravity="top"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                tools:text="Рецепты из березы"/>
+
+        <com.martianlab.recipes.presentation.views.base.BaseRecyclerView
+                android:id="@+id/receiptList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                data="@{viewModel.recipeList}"
+                app:orientation="0"
+                tools:listitem="@layout/recipe_item"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

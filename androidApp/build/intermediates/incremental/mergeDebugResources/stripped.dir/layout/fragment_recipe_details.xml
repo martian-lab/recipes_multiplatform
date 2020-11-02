@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+
+    
+
+                 
+                            
+                                                                                           
+
+           
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:contentDescription="@null" android:tag="layout/fragment_recipe_details_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:expandedTitleMarginStart="24dp"
+                    app:layout_scrollFlags="scroll">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                            android:tag="binding_1"                             
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/toolbar"
+                            android:minHeight="?attr/actionBarSize"
+                            android:theme = "@style/UtkonosToolbar"
+                                                          
+                            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                            app:titleTextColor="@android:color/white">
+                            <TextView
+                                    android:id="@+id/toolbar_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Заголовок"
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:paddingLeft="16dp"
+                                    android:maxLines="1"
+                                    android:layout_marginEnd="16dp"
+                                    android:tag="binding_2"          
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"/>
+                    </com.google.android.material.appbar.MaterialToolbar>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/recipeImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:tag="binding_3"           
+                            android:contentDescription="Фото рецепта"
+                            android:scaleType="fitStart" />
+
+                    <TextView
+                            android:id="@+id/recipeNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:textColor="@color/greyish_brown"
+                            android:textSize="20sp"
+                            android:tag="binding_4"          
+                            tools:text="Название рецепта" />
+
+                    <TextView
+                            android:id="@+id/recipeDifficult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center"
+                            android:textColor="@color/bluey_grey"
+                            android:textSize="14sp"
+                            android:tag="binding_5"                
+                            tools:text="Сложность приготовления: низкая" />
+
+                    <TextView
+                            android:id="@+id/recipePersons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center"
+                            android:textColor="@color/bluey_grey"
+                            android:textSize="14sp"
+                            android:tag="binding_6"                
+                            tools:text="Блюдо на 4 персоны" />
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@null"
+                    android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/buttonIngrediends"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_recipe_mode_background"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="ИНГРЕДИЕНТЫ"
+                        android:textColor="@drawable/selector_recipe_mode"
+                        android:textSize="14sp" />
+
+                <TextView
+                        android:id="@+id/buttonSteps"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_recipe_mode_background"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="ПРИГОТОВЛЕНИЕ"
+                        android:textColor="@drawable/selector_recipe_mode"
+                        android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.martianlab.recipes.presentation.views.base.BaseRecyclerView
+            android:id="@+id/ingredientsListView"
+            android:tag="binding_7"            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:clipToPadding="false"
+            android:contentDescription="Список ингредиентов"
+            android:overScrollMode="never"
+            android:paddingBottom="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:listitem="@layout/recipe_ingredient_item" />
+
+        <com.martianlab.recipes.presentation.views.base.BaseRecyclerView
+            android:id="@+id/stagesListView"
+            android:tag="binding_8"       
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:clipToPadding="false"
+            android:contentDescription="Шаги приготовления"
+            android:overScrollMode="never"
+            android:paddingBottom="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:listitem="@layout/recipe_stage_item" />
+
+        <View
+                android:id="@+id/main_gradient_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/container_gradient_bottom"
+                android:contentDescription="@null" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+         
