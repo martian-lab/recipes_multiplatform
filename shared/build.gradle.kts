@@ -42,8 +42,6 @@ kotlin {
                 implementation("com.squareup.sqldelight:runtime:$sqlDelightVersion")
 
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.1.0")
-                // koin
-                //implementation("org.koin:koin-core:$koin")
                 api("org.koin:koin-core:$koin")
             }
         }
@@ -65,8 +63,13 @@ kotlin {
                 implementation("junit:junit:4.12")
             }
         }
-//        val iosMain by getting
-//        val iosTest by getting
+        val iosMain by getting{
+            dependencies{
+                implementation("io.ktor:ktor-client-ios:$ktorVersion")
+                implementation("com.squareup.sqldelight:native-driver:$sqlDelightVersion")
+            }
+        }
+        val iosTest by getting
     }
 }
 android {
@@ -89,6 +92,7 @@ android {
 sqldelight {
     database("AppDatabase") {
         packageName = "com.martianlab.recipes.shared.db.cache"
+        sourceFolders = listOf("sqldelight")
     }
 }
 
