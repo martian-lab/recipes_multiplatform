@@ -1,7 +1,7 @@
 Recipes Multiplatform
 =====================
 
-This repository is the [Recipes](https://github.com/topinambur/recipes) sample android project, rewrited using the [Kotlin Multiplatform Mobile](https://kotlinlang.org/lp/mobile/).
+This repository is the [Recipes](https://github.com/topinambur/recipes_new) sample android project, rewrited using the [Kotlin Multiplatform Mobile](https://kotlinlang.org/lp/mobile/).
 It implements MVVM architecture using Kotlin.
 
 #### The specific android libraries from the original project are changed to their multiplatform analogs:
