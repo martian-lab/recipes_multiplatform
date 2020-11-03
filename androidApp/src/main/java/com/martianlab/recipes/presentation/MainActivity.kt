@@ -15,8 +15,6 @@ import java.lang.ref.WeakReference
 
 class MainActivity : FragmentActivity() {
 
-    //@Inject
-    //lateinit var routingApi: RoutingApi
 
     private val requestPermissionsLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { result ->
 
@@ -37,24 +35,10 @@ class MainActivity : FragmentActivity() {
         requestPermissions()
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        //App.fragmentActivity = WeakReference(this)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        //App.component.inject(this)
-        //routingApi.goTo(Destination.Splash)
-    }
-
 
     private fun requestPermissions(){
-
         requestPermissionsLauncher.launch(arrayOf(
             Manifest.permission.INTERNET
         ))
-
     }
 }

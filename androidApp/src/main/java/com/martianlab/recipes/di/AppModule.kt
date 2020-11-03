@@ -18,8 +18,7 @@ val appModule = module {
 
 private fun provideRouting() : RoutingApi {
     val fragmentManager = App.fragmentManager?.get()
-    val fragmentActivity = App.fragmentActivity
-    return RouterImpl(fragmentActivity, fragmentManager)
+    return RouterImpl(fragmentManager)
 }
 
 private fun provideDatabaseDriverFactory(context: Context) =

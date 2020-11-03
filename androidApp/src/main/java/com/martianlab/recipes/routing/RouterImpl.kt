@@ -13,13 +13,11 @@ import java.lang.ref.WeakReference
 
 
 class RouterImpl constructor(
-    val activity: WeakReference<FragmentActivity>?,
-    val fragmentManager: FragmentManager?
+    private val fragmentManager: FragmentManager?
 ) : RoutingApi {
 
     override fun goTo(destination: Destination) {
 
-        //activity?.get()?.let {
         fragmentManager?.let {
             when (destination) {
                 is Destination.Splash ->

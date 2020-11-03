@@ -25,6 +25,5 @@ class App : Application() {
     companion object {
         lateinit var context: Context
         var fragmentManager : WeakReference<FragmentManager>? = null
-        var fragmentActivity : WeakReference<FragmentActivity>? = null
     }
 }
