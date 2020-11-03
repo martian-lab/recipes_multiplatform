@@ -12,19 +12,17 @@ import com.martianlab.recipes.domain.api.DbApi
 import com.martianlab.recipes.entities.*
 import com.martianlab.recipes.shared.db.cache.AppDatabase
 import com.squareup.sqldelight.Query
-import com.squareup.sqldelight.db.SqlDriver
 import commartianlabrecipesshareddbcache.*
 
 
-class DbImpl(driverFactory: DatabaseDriverFactory) : DbApi {
+internal class DbImpl(driverFactory: DatabaseDriverFactory) : DbApi {
 
-    val driver = driverFactory.createDriver()
-    val db = AppDatabase(driver, recipeCommentEntityAdapter = RecipeCommentEntity.Adapter(photoURLsAdapter = Converters.listOfStringsAdapter))
+    private val driver = driverFactory.createDriver()
+    private val db = AppDatabase(driver, recipeCommentEntityAdapter = RecipeCommentEntity.Adapter(photoURLsAdapter = Converters.listOfStringsAdapter))
 
-    //val db = createDb()!!
 
-    val recipesDb = db.recipeEntityQueries
-    val categoryDb = db.categoryEntityQueries
+    private val recipesDb = db.recipeEntityQueries
+    private val categoryDb = db.categoryEntityQueries
 
     private fun RecipeEntity.toRecipeWithDependenciesEntity() : RecipeWithDependenciesEntity {
 

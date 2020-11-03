@@ -5,7 +5,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-class RecipeDTO(
+internal class RecipeDTO(
 
     @SerialName("Id")
     val id : Int,

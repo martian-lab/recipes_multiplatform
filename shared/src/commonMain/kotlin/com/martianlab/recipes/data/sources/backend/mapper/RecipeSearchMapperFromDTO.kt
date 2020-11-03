@@ -107,20 +107,20 @@ internal object RecipeSearchMapperFromDTO {
         )
 
 }
-fun RecipeSearchResponseBodyDTO.toCategory() : Category? = RecipeSearchMapperFromDTO.mapToCategory(this)
+internal fun RecipeSearchResponseBodyDTO.toCategory() : Category? = RecipeSearchMapperFromDTO.mapToCategory(this)
 
-fun RecipeSearchResponseBodyDTO.toCategoryList() : List<Category> = RecipeSearchMapperFromDTO.mapToCategoryList(this)
+internal fun RecipeSearchResponseBodyDTO.toCategoryList() : List<Category> = RecipeSearchMapperFromDTO.mapToCategoryList(this)
 
-fun RecipeSearchResponseBodyDTO.toRecipeList() : List<Recipe> = RecipeSearchMapperFromDTO.mapToRecipeList(this)
+internal fun RecipeSearchResponseBodyDTO.toRecipeList() : List<Recipe> = RecipeSearchMapperFromDTO.mapToRecipeList(this)
 
-fun RecipeDTO.toRecipe() : Recipe = RecipeSearchMapperFromDTO.map(this)
+internal fun RecipeDTO.toRecipe() : Recipe = RecipeSearchMapperFromDTO.map(this)
 
-fun CommentDTO.toComment(recipeId : Long ) : RecipeComment = RecipeSearchMapperFromDTO.map(this, recipeId)
+internal fun CommentDTO.toComment(recipeId : Long ) : RecipeComment = RecipeSearchMapperFromDTO.map(this, recipeId)
 
-fun RecipeCookingDTO.toStage() : RecipeStage = RecipeSearchMapperFromDTO.map(this)
+internal fun RecipeCookingDTO.toStage() : RecipeStage = RecipeSearchMapperFromDTO.map(this)
 
-fun RecipeIngredientDTO.toIngredient() : RecipeIngredient = RecipeSearchMapperFromDTO.map(this)
+internal fun RecipeIngredientDTO.toIngredient() : RecipeIngredient = RecipeSearchMapperFromDTO.map(this)
 
-fun CategoryDTO.toTag(recipeId : Long ) : RecipeTag = RecipeSearchMapperFromDTO.map(this, recipeId )
+internal fun CategoryDTO.toTag(recipeId : Long ) : RecipeTag = RecipeSearchMapperFromDTO.map(this, recipeId )
 
-fun CategoryDTO.toCategory(total : Int ) : Category = RecipeSearchMapperFromDTO.map(this, total )
+internal fun CategoryDTO.toCategory(total : Int ) : Category = RecipeSearchMapperFromDTO.map(this, total )

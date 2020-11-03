@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 
 
 @Serializable
-class CommentDTO(
+internal class CommentDTO(
 
 
     @SerialName("Author")

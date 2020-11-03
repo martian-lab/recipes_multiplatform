@@ -138,38 +138,38 @@ internal object RecipeEntityMapper {
         )
 }
 
-fun RecipeIngredient.toEntity() =
+internal fun RecipeIngredient.toEntity() =
     RecipeEntityMapper.map2Entity(this)
 
-fun RecipeStage.toEntity() =
+internal fun RecipeStage.toEntity() =
     RecipeEntityMapper.map2Entity(this)
 
-fun RecipeComment.toEntity() =
+internal fun RecipeComment.toEntity() =
     RecipeEntityMapper.map2Entity(this)
 
-fun RecipeTag.toEntity() =
+internal fun RecipeTag.toEntity() =
     RecipeEntityMapper.map2Entity(this)
 
-fun RecipeTagEntity.toRecipeTag() =
+internal fun RecipeTagEntity.toRecipeTag() =
     RecipeEntityMapper.map2Model(this)
 
-fun RecipeCommentEntity.toRecipeComment() =
+internal fun RecipeCommentEntity.toRecipeComment() =
     RecipeEntityMapper.map2Model(this)
 
-fun RecipeIngredientEntity.toRecipeIngredient() =
+internal fun RecipeIngredientEntity.toRecipeIngredient() =
     RecipeEntityMapper.map2Model(this)
 
-fun RecipeStageEntity.toRecipeStage() =
+internal fun RecipeStageEntity.toRecipeStage() =
     RecipeEntityMapper.map2Model(this)
 
-fun RecipeWithDependenciesEntity.toRecipe() =
+internal fun RecipeWithDependenciesEntity.toRecipe() =
     RecipeEntityMapper.map2Model(this)
 
-fun RecipeEntity.toRecipe() =
+internal fun RecipeEntity.toRecipe() =
     RecipeEntityMapper.map2Model(this)
 
-fun Recipe.toEntity() =
+internal fun Recipe.toEntity() =
     RecipeEntityMapper.map2Entity(this)
 
-fun Recipe.toEntityWithDependencies() =
+internal fun Recipe.toEntityWithDependencies() =
     RecipeEntityMapper.map2EntityWithDependencies(this)

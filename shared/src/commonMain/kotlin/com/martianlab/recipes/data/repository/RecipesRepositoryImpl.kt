@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 
-class RecipesRepositoryImpl constructor(
+internal class RecipesRepositoryImpl constructor(
     private val dbApi: DbApi,
     private val backendApi: BackendApi,
     //private val preferences: SharedPreferences

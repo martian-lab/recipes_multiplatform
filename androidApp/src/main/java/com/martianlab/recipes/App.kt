@@ -5,9 +5,9 @@ import android.content.Context
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import com.martianlab.recipes.di.*
-import com.surrus.common.di.initKoin
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.startKoin
 import java.lang.ref.WeakReference
 
 class App : Application() {
@@ -19,10 +19,10 @@ class App : Application() {
 
         //appContext = this
 
-        initKoin {
+        startKoin {
             androidLogger()
             androidContext(this@App)
-            modules(appModule, dataModule, domainModule, )
+            modules(appModule)
         }
     }
 

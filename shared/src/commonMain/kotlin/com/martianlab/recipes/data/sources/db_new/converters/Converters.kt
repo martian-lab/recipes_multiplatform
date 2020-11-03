@@ -9,7 +9,7 @@ import kotlinx.serialization.builtins.serializer
 import kotlinx.serialization.json.Json
 
 
-object Converters {
+internal object Converters {
     val listOfStringsAdapter = object : ColumnAdapter<List<String>, String> {
         override fun decode(value: String) : List<String> = Json.decodeFromString(ListSerializer(String.serializer()), value)
         override fun encode(list: List<String>) = Json.encodeToString(ListSerializer(String.serializer()), list)

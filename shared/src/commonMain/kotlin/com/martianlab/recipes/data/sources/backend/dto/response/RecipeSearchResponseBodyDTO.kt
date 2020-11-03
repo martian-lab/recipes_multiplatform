@@ -9,7 +9,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-class RecipeSearchResponseBodyDTO(
+internal class RecipeSearchResponseBodyDTO(
 
 
     @SerialName("RecipeList")

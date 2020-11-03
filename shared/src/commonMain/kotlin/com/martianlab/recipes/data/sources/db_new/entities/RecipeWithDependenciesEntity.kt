@@ -3,7 +3,7 @@ package com.martianlab.data.sources.db_new.entities
 import commartianlabrecipesshareddbcache.*
 
 
-data class RecipeWithDependenciesEntity(
+internal data class RecipeWithDependenciesEntity(
 
     val recipeEntity: RecipeEntity,
 

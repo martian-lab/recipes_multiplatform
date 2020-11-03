@@ -1,7 +1,7 @@
 package com.martianlab.recipes.domain.api
 
 
-interface PreferencesApi {
+internal interface PreferencesApi {
 
     val isFirstAppLaunch: Boolean
 

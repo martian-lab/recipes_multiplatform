@@ -19,7 +19,7 @@ import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 
 
-class BackendKtorImpl() : BackendApi{
+internal class BackendKtorImpl() : BackendApi{
 
     private val URL = "http://www.utkonos.ru/api/rest/"
     private val nonStrictJson = Json { isLenient = true; ignoreUnknownKeys = true }

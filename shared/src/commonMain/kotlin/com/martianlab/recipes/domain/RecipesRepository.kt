@@ -3,7 +3,7 @@ package com.martianlab.recipes.domain
 import com.martianlab.recipes.entities.*
 import kotlinx.coroutines.flow.Flow
 
-interface RecipesRepository {
+internal interface RecipesRepository {
 
     suspend fun getRecipesFromBackend(count : Int, offset : Int ) : Result<List<Recipe>>
 

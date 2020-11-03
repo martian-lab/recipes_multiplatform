@@ -8,7 +8,7 @@ import com.martianlab.recipes.entities.Result
 /**
  * REST API access points
  */
-interface BackendApi {
+internal interface BackendApi {
 
     suspend fun recipeSearch(categoryId : Long, recipeId : Long, count : Int, offset : Int ) : Result<List<Recipe>>
 

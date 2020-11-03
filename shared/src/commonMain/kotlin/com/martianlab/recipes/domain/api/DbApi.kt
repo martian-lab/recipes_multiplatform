@@ -7,7 +7,7 @@ import com.martianlab.recipes.entities.RecipeIngredient
 import com.martianlab.recipes.entities.RecipeTag
 
 
-interface DbApi{
+internal interface DbApi{
 
     suspend fun getRecipes(tag: RecipeTag) : List<Recipe>
 

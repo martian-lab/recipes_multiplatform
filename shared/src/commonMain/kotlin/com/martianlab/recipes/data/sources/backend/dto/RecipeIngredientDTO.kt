@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 
 
 @Serializable
-class RecipeIngredientDTO(
+internal class RecipeIngredientDTO(
 
     @SerialName("Id")
     val id : Long,

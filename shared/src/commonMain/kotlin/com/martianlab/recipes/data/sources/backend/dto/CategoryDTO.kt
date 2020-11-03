@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 
 
 @Serializable
-class CategoryDTO(
+internal class CategoryDTO(
 
     @SerialName("Id")
     val id : Long,
