@@ -9,9 +9,9 @@ import kotlinx.coroutines.flow.Flow
 
 
 internal class RecipesInteractorImpl constructor(
-    val recipesRepository: RecipesRepository,
-    val dbApi: DbApi,
-    val backendApi: BackendApi,
+    private val recipesRepository: RecipesRepository,
+    private val dbApi: DbApi,
+    private val backendApi: BackendApi,
     private val router : RoutingApi
 ) : RecipesInteractor{
 

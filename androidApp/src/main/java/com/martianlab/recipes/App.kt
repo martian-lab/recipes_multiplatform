@@ -12,12 +12,8 @@ import java.lang.ref.WeakReference
 
 class App : Application() {
 
-    //lateinit var appContext: Context
-
     override fun onCreate() {
         super.onCreate()
-
-        //appContext = this
 
         startKoin {
             androidLogger()
