@@ -11,7 +11,6 @@ It implements MVVM architecture using Kotlin.
 - Dagger2         -> [Koin](https://github.com/InsertKoinIO/koin) (multiplatform version 3.0.0-alpha-4).
 
 
-## If this project helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 
 ### License
 ```
